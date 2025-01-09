@@ -72,9 +72,8 @@ public class Fighter : MonoBehaviour
     private bool CheckHasAttack()
     {
         baseLayer = animator.GetCurrentAnimatorStateInfo(0);
-        if (baseLayer.fullPathHash == Animator.StringToHash("Base Layer.ZombieAttack"))
+        if (baseLayer.fullPathHash == Animator.StringToHash("Base Layer.Enemy Attack"))
         {
-
             return false;
         }
         else
